@@ -1,0 +1,23 @@
+"""
+Instructions:
+Write a function that always returns 5
+
+Sounds easy right? Just bear in mind that you can't use any of the following characters: 0123456789*+-/
+"""
+
+
+"""
+Sample Tests:
+import codewars_test as test
+from solution import unusual_five
+
+@test.describe("Fixed Tests")
+def fixed_tests():
+    @test.it('Should return 5')
+    def basic_test_cases():
+        test.assert_equals(unusual_five(),5,"lol")
+"""
+
+#Solution:
+def unusual_five():
+    return len("five!")
