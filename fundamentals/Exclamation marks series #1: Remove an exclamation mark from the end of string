@@ -34,4 +34,11 @@ for inp, exp in tests:
 
 #Solution:
 def remove(s):
+    import re
+    return re.sub(r'!$', '', s)
+
+"""
+or:
+def remove(s):
     return s[:-1] if s.endswith('!') else s
+"""
