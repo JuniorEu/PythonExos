@@ -1,0 +1,32 @@
+"""
+Instructions:
+Write function parse_float which takes a string/list and returns a number or 'none' if conversion is not possible.
+"""
+
+
+"""
+Sample Tests:
+import codewars_test as test
+from solution import parse_float
+
+@test.describe("Fixed Tests")
+def fixed_tests():
+    @test.it('Basic Test Cases')
+    def basic_test_cases():
+        ts = (
+            ("1.0", 1.0),
+            ("a", None),
+            ("234.0234", 234.0234)
+        )
+        
+        for t in ts:
+            test.assert_equals(parse_float(t[0]), t[1])
+    
+"""
+
+#Solution:
+def parse_float(string):
+    try:
+        return float(string)
+    except (ValueError, TypeError):
+        return None
