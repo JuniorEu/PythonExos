@@ -1,0 +1,21 @@
+"""
+Instructions:
+A student was working on a function and made some syntax mistakes while coding. Help them find their mistakes and fix them.
+"""
+
+
+"""
+Sample Tests:
+@test.describe('Example Tests')
+def example_tests():
+    test.assert_equals(main('take ', 'item'), 'take item')
+    test.assert_equals(main('use ', 'sword'), 'use sword')
+"""
+
+
+#Solution:
+def main (verb, noun):
+    # This function has three problems: square brackets instead of parenthesis,
+    # a colon after the parenthesis and the return command inside the
+    # function is not indented.
+    return verb + noun
